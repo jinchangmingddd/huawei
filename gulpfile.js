@@ -39,7 +39,7 @@ const jsHandler = ()=>{
 const htmlHandler = ()=>{
     // 4-1. 找到 html 文件
     return gulp
-      .src('./src/pages/*.html')
+      .src('./src/pages/*.**')
       // 因为 htmlmin 的所有打包信息都需要以参数的形式进行配置
       .pipe(htmlmin({ // 压缩
         removeAttributeQuotes: true, // 去除属性上的双引号
@@ -88,7 +88,7 @@ const delHandler = () => {
     gulp.watch('./src/assets/*.**', assetsHandler)
     gulp.watch('./src/images/*.**', imgHandler)
     gulp.watch('./src/js/*.js', jsHandler)
-    gulp.watch('./src/pages/*.html', htmlHandler)
+    gulp.watch('./src/pages/*.**', htmlHandler)
     gulp.watch('./src/css/*.css', cssHandler)
  }
 
@@ -110,10 +110,10 @@ const defaultHandler = gulp.series(
 //   }
 
 
-// module.exports.sassHandler = sassHandler;
-// module.exports.jsHandler = jsHandler;
+module.exports.sassHandler = sassHandler;
+module.exports.jsHandler = jsHandler;
 module.exports.htmlHandler = htmlHandler;
-// module.exports.imgHandler = imgHandler;
-// module.exports.assetsHandler = assetsHandler;
-// module.exports.cssHandler = cssHandler;
+module.exports.imgHandler = imgHandler;
+module.exports.assetsHandler = assetsHandler;
+module.exports.cssHandler = cssHandler;
 module.exports.default = defaultHandler;
