@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li,ol{
+    list-style: none;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.headerinner{
+    width: 1200px;
+    height: 38px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    img{
+        width: 108px;
+        height: 24px;
+        float: left;
+        margin-top: 7px;
+    }
+    p{
+        height: 20px;
+        float: left;
+        border-left: 1px solid black;
+        padding-left: 15px;
+        margin: 10px 0px 0px 15px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+
+.content{
+    height: 800px;
+    width: 100%;
+    .contentinner{
+        width: 1200px;
+        height: 800px;
+        margin: 0 auto;
+        p{
+         margin: 100px 0px 80px 0px;
+         text-align: center;
+         font-size: 32px;
+        }
+        .login{
+            width: 1200px;
+            height: 420px;
+            display: flex;
+            .left{
+                width: 600px;
+                height: 250px;
+                border-right: 1px solid gray;
+                section{
+                    width: 150px;
+                    height: 150px;
+                    margin-left: 300px;
+                    background-color: #f2f2f2;
+                    img{
+                    margin: 10px 10px 10px 10px;
+                    width: 130px;
+                    height: 130px;
+                }
+                }
+                span{
+                    display: block;
+                    margin: 50px 0px 0px 233px;
+                    font-size: 12px;
+                    color: gray;
+                }
+                
+            }
+            .right{
+                margin-left: 54px;
+                form{
+                    width: 450px;
+                    height: 280px;
+                    input{
+                        width: 350px;
+                        height: 45px;
+                        background-color: #f2f2f2;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                        border-radius: 5px;
+                        // outline: none;
+                        outline: skyblue;
+                        border: none;
+                        display: block;
+                    }
+                    article{
+                        margin: 0px 0px 30px 0px;
+                        color: skyblue;
+                    }
+                    article:hover{
+                        color: blue;
+                    }
+                    .smt{
+                        width: 360px;
+                        height: 45px;
+                        background-color: red;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 700px;
+                    }
+                }
+                .zc{
+                    ul{
+                        width: 344px;
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        li{
+                            width: 90px;
+                            height: 18px;
+                            border-right: 1px solid  gray;
+                            text-align: center;
+                            color: skyblue;
+                        }
+                        li:hover{
+                            color: blue;
+                        }
+                        .lastli{
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    .footerinner{
+        width: 1200px;
+        height: 88px;
+        background-color: #f2f2f2;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        section{
+            margin-top: 40px;
+            span{
+                border-right: 1px solid gray;
+                padding: 0px 20px 0px 20px;
+            }
+            .lastspan{
+                border-right: none;
+            }
+        }
+        p{
+            margin-top: 10px;
+            color: #908e82;
+        }
+    }
+
+}
+.hide{
+    display: none;
+}
+

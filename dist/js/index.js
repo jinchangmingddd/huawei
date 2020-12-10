@@ -1,0 +1,1 @@
+"use strict";$(function(){var e=getCookie("nickname");e?$(".loginone").addClass("hide").siblings().removeClass("hide").text("欢迎您：".concat(e)):$(".logintwo").addClass("hide").siblings().removeClass("hide")});

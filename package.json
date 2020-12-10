@@ -1,0 +1,44 @@
+{
+  "name": "project-huawei",
+  "version": "0.0.1",
+  "description": "电商网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinchangmingddd/huawei.git"
+  },
+  "keywords": [
+    "phone",
+    "goods"
+  ],
+  "author": "jcm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinchangmingddd/huawei/issues"
+  },
+  "homepage": "https://github.com/jinchangmingddd/huawei#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "jQuery": "^1.7.4",
+    "jquery-pagination": "^1.1.0",
+    "jquery-validation": "^1.19.2",
+    "superagent": "^6.1.0",
+    "swiper": "^4.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
