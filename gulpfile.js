@@ -48,7 +48,7 @@ const htmlHandler = ()=>{
         removeEmptyAttributes: true, // 去除空的属性
         removeScriptTypeAttributes: true, // 去除 script 标签上的 type 属性
         removeStyleLinkTypeAttributes: true, // 去除 style 标签和 link 标签上的 type 属性
-        // minifyJS: true, // 压缩内嵌式 js 代码, 不认识 ES6
+        minifyJS: true, // 压缩内嵌式 js 代码, 不认识 ES6
       }))
       .pipe(gulp.dest('./dist/pages/')) // 保存
   }
@@ -112,7 +112,7 @@ const defaultHandler = gulp.series(
 
 // module.exports.sassHandler = sassHandler;
 // module.exports.jsHandler = jsHandler;
-// module.exports.htmlHandler = htmlHandler;
+module.exports.htmlHandler = htmlHandler;
 // module.exports.imgHandler = imgHandler;
 // module.exports.assetsHandler = assetsHandler;
 // module.exports.cssHandler = cssHandler;
